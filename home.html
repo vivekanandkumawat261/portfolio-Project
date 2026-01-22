@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vivekanand Kumawat | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: #e5e7eb;
+      scroll-behavior: smooth;
+    }
+
+    a { color: #38bdf8; text-decoration: none; }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(2, 6, 23, 0.9);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      z-index: 1000;
+    }
+
+    header h2 { color: #38bdf8; }
+
+    nav a {
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 100px 10%;
+      min-height: 100vh;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 20px 0;
+      color: #cbd5f5;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: #38bdf8;
+      color: #020617;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover { background: #0ea5e9; }
+
+    .about, .skills, .projects, .timeline, .contact {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2.section-title {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2.3rem;
+      color: #38bdf8;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: center;
+      color: #cbd5f5;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-8px);
+      background: #0f172a;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      background: #0f172a;
+    }
+
+    .project-card h3 { margin-bottom: 10px; }
+
+    .timeline-item {
+      background: #1e293b;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #38bdf8;
+      border-radius: 8px;
+    }
+
+    .contact form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      background: #1e293b;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+    }
+
+    @media (max-width: 768px) {
+      header { padding: 15px 20px; }
+      .hero h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Vivekanand</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#timeline">Journey</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>Hi, I'm <span>Vivekanand Kumawat</span></h1>
+  <p>BS in Data Science at IIT Madras | Full Stack + AI Aspirant  
+     Passionate about building scalable web and intelligent systems.</p>
+  <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about">
+    <p>
+      I am a BS in Data Science student at IIT Madras, focused on becoming a strong
+      core software engineer with AI awareness. I enjoy solving DSA problems,
+      building full-stack applications, and exploring machine learning systems.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">HTML</div>
+    <div class="skill-card">CSS</div>
+    <div class="skill-card">JavaScript</div>
+    <div class="skill-card">React</div>
+    <div class="skill-card">Python</div>
+    <div class="skill-card">Java</div>
+    <div class="skill-card">Flask</div>
+    <div class="skill-card">MERN Stack</div>
+    <div class="skill-card">DSA</div>
+    <div class="skill-card">Git & Linux</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Quiz Master</h3>
+      <p>Flask-based multi-user exam preparation platform with admin & user roles.</p>
+      <a href="#">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>MERN Stack App</h3>
+      <p>Full stack application using MongoDB, Express, React, Node.js.</p>
+      <a href="#">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Virtual TA</h3>
+      <p>AI-powered assistant for IITM course content & discussion scraping.</p>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section id="timeline">
+  <h2 class="section-title">Journey</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>2019</h3>
+      <p>Completed 10th Standard (Rajasthan Board)</p>
+    </div>
+    <div class="timeline-item">
+      <h3>2021</h3>
+      <p>Completed 12th Standard (Rajasthan Board)</p>
+    </div>
+    <div class="timeline-item">
+      <h3>2023</h3>
+      <p>Cleared JEE Main with 95 percentile</p>
+    </div>
+    <div class="timeline-item">
+      <h3>2024 - Present</h3>
+      <p>BS in Data Science at IIT Madras</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="contact">
+    <form onsubmit="sendMessage(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Vivekanand Kumawat | All Rights Reserved</p>
+</footer>
+
+<script>
+  function sendMessage(e) {
+    e.preventDefault();
+    alert("Message sent successfully! (Demo mode)");
+  }
+</script>
+
+</body>
+</html>
+
